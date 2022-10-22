@@ -32,7 +32,7 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "append": "cat ./userscript.config ./dist/bundle.js >> ./userscript/myselfultra.user.js",
+    "append": "cat ./userscript.config ./dist/bundle.js > ./userscript/myselfultra.user.js",
     "clean": "rimraf ./dist",
     "build": "yarn run clean && yarn run webpack && yarn run append"
   }
